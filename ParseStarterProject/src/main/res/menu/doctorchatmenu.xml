@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sendmessage" android:title="发送新消息"></item>
+    <item android:id="@+id/info" android:title="返回病人界面"></item>
+    <item android:id="@+id/home" android:title="返回主页"></item>
+</menu>

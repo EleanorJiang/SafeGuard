@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/loginlogobackground">
+
+
+        <TextView
+            android:id="@+id/sumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:text="欢迎来到Heart Guard！"
+            android:textColor="#ff141414"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/darker_gray"
+            android:textSize="25sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/sumTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/gridLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="血压"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:tag="0"
+            android:id="@+id/button0"
+            android:textSize="40sp"
+            android:background="#fd8269"
+            android:onClick="showrecord0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="心率"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:tag="1"
+            android:id="@+id/button1"
+            android:textSize="40sp"
+            android:background="#edb88d"
+            android:onClick="showrecord1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="药物"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            android:tag="2"
+            android:id="@+id/button2"
+            android:textSize="40sp"
+            android:background="#a4ce74"
+            android:onClick="showrecord2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:background="#d7cbdf"
+            android:onClick="showrecord3"
+            android:tag="3"
+            android:text="饮食"
+            android:textSize="40sp" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chat"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:text="持续地记录您的健康数据是保持健康的前提！在这里您可以查看您的历史测量记录，并记录新的健康数据"
+            android:textColor="#ff141414"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:onClick="returnhome" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center"
+            android:onClick="gochat" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:onClick="gosetting" />
+
+</RelativeLayout>
+

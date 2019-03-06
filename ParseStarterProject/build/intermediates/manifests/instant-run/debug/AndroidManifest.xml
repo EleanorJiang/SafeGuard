@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.parse.starter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.parse.starter.StarterApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/new_icon"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <activity
+            android:name="com.parse.starter.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.parse.starter.UserListActivity" />
+        <activity android:name="com.parse.starter.UserFeedActivity" />
+        <activity
+            android:name="com.parse.starter.PatientHome"
+            android:label="@string/title_activity_patient_home" />
+        <activity android:name="com.parse.starter.PatientChat" />
+        <activity android:name="com.parse.starter.PatientMessage" />
+        <activity android:name="com.parse.starter.PatientSetting" />
+        <activity android:name="com.parse.starter.DoctorChat" />
+        <activity android:name="com.parse.starter.DoctorSetting" />
+        <activity android:name="com.parse.starter.PatientMeasure" />
+        <activity android:name="com.parse.starter.PatientAdd" />
+        <activity android:name="com.parse.starter.PatientAdd1" />
+        <activity android:name="com.parse.starter.PatientAdd2" />
+        <activity android:name="com.parse.starter.Settingpassword" />
+        <activity android:name="com.parse.starter.Changedoctor" />
+        <activity android:name="com.parse.starter.PatientSettingDetail" />
+        <activity android:name="com.parse.starter.settingemail" />
+        <activity android:name="com.parse.starter.DoctorAddPatient" />
+        <activity android:name="com.parse.starter.Doctor_PatientInfo" />
+        <activity android:name="com.parse.starter.sendNewMassege" />
+        <activity android:name="com.parse.starter.DoctorSettingDetail" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.parse.starter.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

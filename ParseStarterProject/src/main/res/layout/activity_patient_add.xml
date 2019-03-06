@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="80dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    tools:context="com.parse.starter.PatientAdd"
+    android:padding="0dp"
+    android:background="@drawable/loginlogobackground">
+
+    <TextView
+        android:id="@+id/shousuoya1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="159dp"
+        android:text="收缩压"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/shousuoya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shousuoya1"
+        android:layout_alignStart="@+id/shousuoya1"
+        android:layout_below="@+id/shousuoya1"
+
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textLongMessage" />
+
+    <TextView
+        android:id="@+id/shuzhangya1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shousuoya2"
+        android:layout_alignStart="@+id/shousuoya2"
+        android:layout_centerVertical="true"
+        android:text="舒张压"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/shuzhangya2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shuzhangya1"
+        android:layout_alignStart="@+id/shuzhangya1"
+        android:layout_below="@+id/shuzhangya1"
+
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/finishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shuzhangya2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/shousuoya1"
+        android:layout_toRightOf="@+id/shousuoya1"
+        android:onClick="finish"
+        android:text="完成" />
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note_editor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="80dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    tools:context="com.parse.starter.Changedoctor"
+    android:padding="0dp"
+    android:background="@drawable/loginlogobackground">
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="159dp"
+        android:text="当前医生："
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name1"
+        android:layout_alignStart="@+id/name1"
+        android:layout_below="@+id/name1"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="top|left"
+        android:inputType="textLongMessage"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name2"
+        android:layout_alignStart="@+id/name2"
+        android:layout_centerVertical="true"
+        android:text="新医生ID："
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name3"
+        android:layout_alignStart="@+id/name3"
+        android:layout_below="@+id/name3"
+
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/finishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+
+        android:layout_marginTop="38dp"
+        android:onClick="finished"
+        android:text="完成" />
+</RelativeLayout>
